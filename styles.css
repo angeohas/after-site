@@ -68,15 +68,15 @@ h2 { font: 400 clamp(32px, 5vw, 44px)/1.15 var(--display); margin: 0 0 14px; tex
 .section-lede { color: var(--muted); max-width: 36em; margin: 0; }
 
 .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; margin-top: 36px; }
-.feature { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.feature { display: grid; gap: 16px; align-content: start; justify-items: center; text-align: center; min-width: 0; }
 .feature img {
   width: 100%; height: auto; max-width: 230px; justify-self: center; display: block;
   border-radius: 34px; border: 9px solid #0B0A18;
   box-shadow: 0 0 0 1.5px #4A4580, 0 24px 60px rgba(0,0,0,.55);
   background: #0B0A18;
 }
-.feature h3 { font: 500 24px var(--display); margin: 0; color: var(--moon); }
-.feature p { margin: 0; color: var(--muted); font-size: 16px; }
+.feature h3 { font: 500 26px var(--display); margin: 0; color: var(--moon); order: -1; text-wrap: balance; }
+.feature p { margin: 0; color: var(--muted); font-size: 16px; max-width: 34ch; text-wrap: pretty; }
 
 .tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 32px; }
 .tool { background: var(--card); border: 1px solid var(--card-line); border-radius: 18px; padding: 18px 20px; min-width: 0; }
