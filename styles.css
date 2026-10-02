@@ -151,6 +151,6 @@ footer a { color: var(--muted); }
 .founder img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 24px; border: 1px solid var(--card-line); box-shadow: 0 24px 60px rgba(0,0,0,.45); }
 .founder figcaption { font-size: 14px; color: var(--muted); text-align: center; }
 @media (max-width: 600px) {
-  .about-page { grid-template-columns: 1fr; grid-template-areas: "photo" "title" "text"; }
-  .founder { max-width: 220px; margin: 0 0 24px; }
+  .about-page { grid-template-columns: 1fr; grid-template-areas: "title" "photo" "text"; }
+  .founder { max-width: 240px; width: 100%; margin: 0 auto 28px; justify-self: center; }
 }
