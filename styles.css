@@ -154,3 +154,9 @@ footer a { color: var(--muted); }
   .about-page { grid-template-columns: 1fr; grid-template-areas: "title" "photo" "text"; }
   .founder { max-width: 240px; width: 100%; margin: 0 auto 28px; justify-self: center; }
 }
+/* about CTA on narrower screens (phones, small windows): center button and contact line together */
+@media (max-width: 900px) {
+  .about-cta { justify-items: center; text-align: center; }
+  .about-cta .store { margin: 0; }
+  .about-cta .fine { margin: 0; max-width: 32ch; }
+}
