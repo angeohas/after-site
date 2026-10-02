@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Support · after: breakup recovery</title>
-<meta name="description" content="Get help with After: subscriptions, your data, and contacting us.">
+<meta name="description" content="Get help with After: restoring Premium, refunds, your data, anchors, notifications, and how to reach us.">
 <meta name="theme-color" content="#2C246D">
 <link rel="icon" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/icon-180.png">
@@ -21,25 +21,101 @@
   </header>
   <main class="narrow doc">
     <h1>Support</h1>
-    <p class="updated">We read every message. Email <a href="mailto:after.support@gmail.com">after.support@gmail.com</a> and we'll get back to you as soon as we can.</p>
-    <div class="card"><p><strong>If you're in crisis,</strong> please don't wait for an email. In the US, call or text <strong>988</strong> to reach the Suicide &amp; Crisis Lifeline any time, or call 911 if you're in danger.</p></div>
-    <h2>Common questions</h2>
-    <div class="faq">
-      <details><summary>How do I restore my Premium subscription?</summary><p>Open After, go to the Premium screen, and tap <strong>Restore purchases</strong>. Make sure you're signed in with the same Apple ID you used to subscribe.</p></details>
-      <details><summary>How do I cancel my subscription?</summary><p>Subscriptions are managed by Apple. On your iPhone, open Settings, tap your name, then <strong>Subscriptions</strong>, and choose After. Cancel at least 24 hours before your renewal date. Refunds are handled by Apple.</p></details>
-      <details><summary>Where is my journal stored? Can you recover it?</summary><p>Your journal, voice notes, photos, receipts and anchor details are stored on your device, not on our servers. That keeps them private, but it also means we can't see or recover them. Deleting the app deletes this data.</p></details>
-      <details><summary>What does my anchor see?</summary><p>Only the message you send them. When you use "Contact anchor" or "I broke contact," After drafts a text and opens your Messages app, and you send it yourself. Your anchor never sees your journal, drafts or check-ins.</p></details>
-      <details><summary>How do I delete a community letter or feedback I sent?</summary><p>Email <a href="mailto:after.support@gmail.com">after.support@gmail.com</a> and we'll remove it. Letters are anonymous, so tell us roughly what it said and when you sent it.</p></details>
+    <p class="updated">We read every message and usually reply within 2–3 days.</p>
+
+    <div class="card crisis-card">
+      <h2 class="crisis-title">If you're in crisis, don't wait for an email</h2>
+      <ul>
+        <li><strong>Call or text 988</strong> to reach the Suicide &amp; Crisis Lifeline (US), any time.</li>
+        <li><strong>Text HOME to 741741</strong> to reach the Crisis Text Line (US), if you'd rather text.</li>
+        <li>Outside the US, find a free helpline near you at <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a>.</li>
+        <li>If you're in immediate danger, call <strong>911</strong> or your local emergency number.</li>
+      </ul>
     </div>
+
+    <div class="contact">
+      <div>
+        <p class="eyebrow">email us</p>
+        <p class="contact-email">after.support@gmail.com</p>
+      </div>
+      <div class="contact-actions">
+        <a class="store small" href="mailto:after.support@gmail.com?subject=After%20support%3A%20Help%20with%20After">Write an email</a>
+        <button class="ghost" id="copy-email" type="button">Copy address</button>
+      </div>
+    </div>
+
+    <label class="search" for="faq-search">
+      <span class="sr">Search questions</span>
+      <input id="faq-search" type="search" placeholder="Search questions, like “refund” or “anchor”" autocomplete="off">
+    </label>
+    <nav class="jump" aria-label="Sections">
+      <a href="#premium-billing">Premium & billing</a>
+      <a href="#your-data-privacy">Your data & privacy</a>
+      <a href="#using-after">Using After</a>
+    </nav>
+    <div class="faq">
+      <h2 id="premium-billing">Premium & billing</h2>
+      <details id="restore"><summary>How do I restore my Premium subscription?</summary><p>Open After and go to the Premium screen (tap any locked feature), then tap <strong>Restore purchases</strong>. Make sure you're signed in to the App Store with the same Apple ID you used to subscribe.</p></details>
+      <details id="premium"><summary>What's included in Premium, and how much is it?</summary><p>After is free to download, and most of it stays free: journaling, receipts and standards, no-contact tracking, music detox, letters, and one anchor. Premium adds photo attachments and Dear Future Me letters, the full activities library, unlimited photo clean-out, mood trends and progress insights, AI song suggestions, and up to 3 anchors. Current prices are shown on the Premium screen before you subscribe, and they can vary by country.</p></details>
+      <details id="cancel"><summary>How do I cancel my subscription?</summary><p>Subscriptions are managed by Apple. On your iPhone, open <strong>Settings</strong>, tap your name, then <strong>Subscriptions</strong>, and choose After. Cancel at least 24 hours before your renewal date to avoid being charged for the next period. Deleting the app does not cancel a subscription.</p></details>
+      <details id="refund"><summary>How do I get a refund?</summary><p>All payments go through Apple, so refunds are handled by Apple, not by us. Go to <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>, sign in with your Apple ID, find the After purchase, and choose <strong>Request a refund</strong>.</p></details>
+      <h2 id="your-data-privacy">Your data & privacy</h2>
+      <details id="stored"><summary>Where is my journal stored? Can you recover it?</summary><p>Your journal, voice notes, photos, receipts and anchor details are stored on your iPhone, not on our servers. That keeps them private, but it also means we can't see them or recover them for you.</p></details>
+      <details id="new-phone"><summary>I got a new phone. Will my data transfer?</summary><p>Because your data lives on your device, it moves with your iPhone backup. If you set up your new iPhone from an iCloud backup, a computer backup, or Quick Start, your After data should come with it. If you set up the new phone as new, or delete the app, we have no copy we can restore.</p></details>
+      <details id="delete-data"><summary>How do I delete all my data?</summary><p>In After, open the <strong>Settings</strong> tab and tap <strong>reset app and start over</strong>. This permanently deletes everything stored in the app on that phone. Deleting the app does the same. Feedback or community letters you sent us are stored separately; email us to remove those.</p></details>
+      <details id="letters"><summary>How do I delete a community letter or feedback I sent?</summary><p>Email <a href="mailto:after.support@gmail.com?subject=After%20support%3A%20Remove%20a%20letter">after.support@gmail.com</a> and we'll remove it. Letters are anonymous, so tell us roughly what it said and when you sent it.</p></details>
+      <h2 id="using-after">Using After</h2>
+      <details id="anchor-sees"><summary>What does my anchor see?</summary><p>Only the message you send them. When you use <strong>Contact anchor</strong> or <strong>I broke contact</strong>, After drafts a text and opens your Messages app, and you send it yourself. Your anchor never sees your journal, drafts or check-ins.</p></details>
+      <details id="anchor-change"><summary>How do I change or remove my anchor?</summary><p>Open the <strong>Settings</strong> tab. Under <strong>your anchor</strong>, tap <strong>remove</strong> next to their name, then <strong>add another anchor</strong> to pick someone new from your contacts. Free accounts have one anchor; Premium allows up to three.</p></details>
+      <details id="notifications"><summary>My notifications aren't showing up.</summary><p>On your iPhone, open <strong>Settings → Notifications → After</strong> and turn on <strong>Allow Notifications</strong>. Also check that a Focus mode (like Sleep or Do Not Disturb) isn't silencing them. After's reminders are scheduled on your phone, so they still work without an internet connection.</p></details>
+      <details id="ideas"><summary>I have an idea for a feature.</summary><p>We'd love to hear it. The fastest way is the <strong>feedback</strong> box in After's Settings tab, which keeps all ideas in one place for us. You can also email us.</p></details>
+    </div>
+    <p id="no-results" class="muted" hidden>No matching questions. Email us and we'll help.</p>
+
     <h2>Still need help?</h2>
-    <p>Email <a href="mailto:after.support@gmail.com">after.support@gmail.com</a> with what's happening and your iPhone model. Screenshots help.</p>
+    <p>Email <a href="mailto:after.support@gmail.com?subject=After%20support%3A%20Help%20with%20After">after.support@gmail.com</a> and include:</p>
+    <ul>
+      <li>What happened, and what you expected to happen</li>
+      <li>Your iPhone model and iOS version</li>
+      <li>Your After version (in the app: <strong>Settings</strong> tab, at the bottom)</li>
+      <li>A screenshot, if you can</li>
+    </ul>
+    <script>
+      (function () {
+        var btn = document.getElementById("copy-email");
+        btn.addEventListener("click", function () {
+          var done = function () { btn.textContent = "Copied"; setTimeout(function () { btn.textContent = "Copy address"; }, 2000); };
+          if (navigator.clipboard) navigator.clipboard.writeText("after.support@gmail.com").then(done, function () { btn.textContent = "after.support@gmail.com"; });
+          else btn.textContent = "after.support@gmail.com";
+        });
+        var input = document.getElementById("faq-search");
+        var items = Array.prototype.slice.call(document.querySelectorAll(".faq details"));
+        var heads = Array.prototype.slice.call(document.querySelectorAll(".faq h2"));
+        var none = document.getElementById("no-results");
+        input.addEventListener("input", function () {
+          var q = input.value.trim().toLowerCase(), shown = 0;
+          items.forEach(function (d) {
+            var hit = !q || d.textContent.toLowerCase().indexOf(q) !== -1;
+            d.hidden = !hit; if (hit) shown++;
+            if (q && hit) d.open = true; if (!q) d.open = false;
+          });
+          heads.forEach(function (h) {
+            var n = h.nextElementSibling, any = false;
+            while (n && n.tagName === "DETAILS") { if (!n.hidden) any = true; n = n.nextElementSibling; }
+            h.hidden = !any;
+          });
+          none.hidden = shown !== 0;
+        });
+        if (location.hash) { var t = document.getElementById(location.hash.slice(1)); if (t && t.tagName === "DETAILS") t.open = true; }
+      })();
+    </script>
   </main>
   <footer>
     <div class="row">
       <span>© 2026 After</span>
-      <nav><a href="/support/">Support</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a><a href="mailto:after.support@gmail.com">after.support@gmail.com</a></nav>
+      <nav><a href="/support/">Support</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a><a href="mailto:after.support@gmail.com?subject=After%20support">after.support@gmail.com</a></nav>
     </div>
-    <p class="crisis">After is not a substitute for professional care. If you're in crisis or thinking about harming yourself, call or text 988 (US) or contact local emergency services.</p>
+    <p class="crisis">After is not a substitute for professional care. If you're in crisis or thinking about harming yourself, call or text 988 or text HOME to 741741 (US), or find a helpline at findahelpline.com.</p>
   </footer>
 </div>
 </body>
