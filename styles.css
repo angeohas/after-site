@@ -134,4 +134,4 @@ footer a { color: var(--muted); }
 .faq h2 { margin-top: 32px; }
 .muted { color: var(--muted); }
 /* V layout: middle feature sits a little lower than the outer two (wide screens only) */
-@media (min-width: 900px) { .feature:nth-child(2) { margin-top: 28px; } }
+@media (min-width: 900px) { .feature:nth-child(2) { margin-top: 18px; } }
