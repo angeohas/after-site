@@ -152,7 +152,7 @@ footer a { color: var(--muted); }
 .founder figcaption { font-size: 14px; color: var(--muted); text-align: center; }
 @media (max-width: 600px) {
   .about-page { grid-template-columns: 1fr; grid-template-areas: "title" "photo" "text" "cta"; }
-  .founder { max-width: 240px; width: 100%; margin: 0 auto 28px; justify-self: center; }
+  .founder { max-width: 170px; width: 100%; margin: 0 auto 24px; justify-self: center; }
 }
 /* about CTA on narrower screens (phones, small windows): center button and contact line together */
 @media (max-width: 900px) {
