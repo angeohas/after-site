@@ -69,7 +69,12 @@ h2 { font: 400 clamp(32px, 5vw, 44px)/1.15 var(--display); margin: 0 0 14px; tex
 
 .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; margin-top: 36px; }
 .feature { display: grid; gap: 14px; align-content: start; min-width: 0; }
-.feature img { width: 100%; height: auto; max-width: 250px; border-radius: 26px; border: 1px solid var(--card-line); box-shadow: 0 20px 50px rgba(0,0,0,.4); justify-self: center; }
+.feature img {
+  width: 100%; height: auto; max-width: 230px; justify-self: center; display: block;
+  border-radius: 34px; border: 9px solid #0B0A18;
+  box-shadow: 0 0 0 1.5px #4A4580, 0 24px 60px rgba(0,0,0,.55);
+  background: #0B0A18;
+}
 .feature h3 { font: 500 24px var(--display); margin: 0; color: var(--moon); }
 .feature p { margin: 0; color: var(--muted); font-size: 16px; }
 
