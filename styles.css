@@ -137,7 +137,7 @@ footer a { color: var(--muted); }
 @media (min-width: 900px) { .feature:nth-child(2) { margin-top: 18px; } }
 
 /* about page: story left, photo right (Beli-style) */
-.about-page { display: grid; grid-template-columns: minmax(0, 1fr) clamp(180px, 28vw, 340px); grid-template-areas: "title ." "text photo"; column-gap: clamp(32px, 5vw, 72px); row-gap: 0; align-items: start; padding-block: 24px 40px; }
+.about-page { display: grid; grid-template-columns: minmax(0, 1fr) clamp(180px, 28vw, 340px); grid-template-areas: "title ." "text photo" "cta ."; column-gap: clamp(32px, 5vw, 72px); row-gap: 0; align-items: start; padding-block: 24px 40px; }
 .about-title { grid-area: title; padding-block: 0; }
 .about-title h1 { font: 300 clamp(38px, 6vw, 52px)/1.1 var(--display); margin: 0 0 28px; text-wrap: balance; }
 .about-text { grid-area: text; }
@@ -145,18 +145,18 @@ footer a { color: var(--muted); }
 .about-text { padding-block: 0; }
 .about-text p { font-size: 18px; line-height: 1.75; }
 .about-text .signature { font: italic 400 24px var(--display); color: var(--moon); margin-top: 28px; }
-.about-cta { display: grid; justify-items: start; gap: 14px; margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--card-line); }
+.about-cta { grid-area: cta; display: grid; justify-items: start; gap: 14px; margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--card-line); }
 .about-cta .store { margin-top: 0; }
 .founder { margin: 18px 0 0; align-self: start; display: grid; gap: 10px; }
 .founder img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 24px; border: 1px solid var(--card-line); box-shadow: 0 24px 60px rgba(0,0,0,.45); }
 .founder figcaption { font-size: 14px; color: var(--muted); text-align: center; }
 @media (max-width: 600px) {
-  .about-page { grid-template-columns: 1fr; grid-template-areas: "title" "photo" "text"; }
+  .about-page { grid-template-columns: 1fr; grid-template-areas: "title" "photo" "text" "cta"; }
   .founder { max-width: 240px; width: 100%; margin: 0 auto 28px; justify-self: center; }
 }
 /* about CTA on narrower screens (phones, small windows): center button and contact line together */
 @media (max-width: 900px) {
-  .about-cta { justify-items: center; text-align: center; }
+  .about-cta { grid-column: 1 / -1; justify-items: center; text-align: center; }
   .about-cta .store { margin: 0; }
   .about-cta .fine { margin: 0; max-width: 32ch; }
 }
