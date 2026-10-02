@@ -144,8 +144,8 @@ footer a { color: var(--muted); }
 .about-text .signature { font: italic 400 24px var(--display); color: var(--moon); margin-top: 28px; }
 .about-cta { display: grid; justify-items: start; gap: 14px; margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--card-line); }
 .about-cta .store { margin-top: 0; }
-.founder { margin: 56px 0 0; display: grid; gap: 10px; }
-.founder img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; border: 1px solid var(--card-line); box-shadow: 0 24px 60px rgba(0,0,0,.45); }
+.founder { margin: 0; align-self: center; display: grid; gap: 10px; }
+.founder img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 24px; border: 1px solid var(--card-line); box-shadow: 0 24px 60px rgba(0,0,0,.45); }
 .founder figcaption { font-size: 14px; color: var(--muted); text-align: center; }
 @media (max-width: 820px) {
   .about-page { grid-template-columns: 1fr; }
