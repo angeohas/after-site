@@ -31,7 +31,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--moon); outline-
 .narrow { max-width: 720px; margin: 0 auto; padding-inline: 20px; }
 
 /* top bar */
-.bar { display: flex; align-items: center; justify-content: space-between; padding-block: 22px; }
+.bar { display: flex; align-items: center; justify-content: space-between; padding-block: 22px; padding-inline: clamp(20px, 3vw, 40px); }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); font: 400 24px var(--display); letter-spacing: .14em; }
 .brand img { width: 30px; height: 30px; border-radius: 8px; }
 .nav { display: flex; gap: 20px; font-size: 15px; }
