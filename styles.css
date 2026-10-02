@@ -142,3 +142,4 @@ footer a { color: var(--muted); }
 .about .signature { font: italic 400 24px var(--display); color: var(--moon); margin-top: 28px; }
 .about-cta { display: grid; justify-items: start; gap: 14px; margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--card-line); }
 .about-cta .store { margin-top: 0; }
+.founder { display: block; width: min(260px, 70%); height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 22px; border: 1px solid var(--card-line); box-shadow: 0 20px 50px rgba(0,0,0,.45); margin: 8px 0 28px; }
