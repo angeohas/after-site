@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Be an anchor · after: breakup recovery</title>
+<meta name="description" content="A friend asked you to be their anchor on After. Text ANCHOR to join.">
+<meta name="theme-color" content="#2C246D">
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/styles.css?v=25">
+<style>
+  .join { display: inline-block; margin: 8px 0 14px; }
+  .code { font: 500 20px var(--body); letter-spacing: .12em; color: var(--text); }
+  .thread { display: grid; gap: 10px; margin: 18px 0 6px; }
+  .msg { max-width: 30em; padding: 10px 14px; border-radius: 16px; font-size: 15px; line-height: 1.45; }
+  .msg.in { background: var(--card); border: 1px solid var(--card-line); justify-self: start; }
+  .msg.out { background: var(--button); color: #fff; justify-self: end; }
+  .who { font-size: 12px; color: var(--muted); margin: 6px 0 -4px; }
+</style>
+</head>
+<body>
+<header class="bar">
+    <a class="brand" href="/"><img src="/assets/icon-180.png" alt="">after</a>
+    <nav class="nav"><a href="/about/">About</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
+  </header>
+<div class="wrap">
+  <main class="narrow doc">
+
+    <h1>be their anchor 🌙</h1>
+    <p>A friend is using After to get through a breakup, and they asked you to be their anchor: the person who gets a heads-up when they might need you.</p>
+
+    <div class="card">
+      <p><strong>What you'll get:</strong> a text from After when your friend could use a check-in (like when they're about to text their ex), a heads-up when they lock their apps before going out, and the code to unlock them early if they really need it. You can reply, and your message goes to them privately in the App.</p>
+    </div>
+
+    <p><a class="store join" id="join" href="sms:+16178419219&amp;body=ANCHOR">text ANCHOR to join</a></p>
+    <p>Or text <span class="code" id="keyword">ANCHOR</span> to <strong>(617) 841-9219</strong>, then reply <strong>YES</strong> to confirm.</p>
+    <p class="fine">By texting ANCHOR to (617) 841-9219, you agree to receive support text messages from After about the friend who invited you. Message frequency varies (usually up to 10 msgs/month). Message and data rates may apply. Reply HELP for help and STOP to opt out at any time. Consent is not a condition of any purchase. See our <a href="/privacy/">Privacy Policy</a> and <a href="/terms/#sms">Terms of Service</a>.</p>
+
+    <h2>what the texts look like</h2>
+    <div class="thread">
+      <div class="who">you</div>
+      <div class="msg out">ANCHOR ASH24</div>
+      <div class="who">after</div>
+      <div class="msg in">after 🌙: reply YES to get support texts about ashley, like when she might need a check-in or an unlock code. up to 10 msgs/mo. msg &amp; data rates may apply. reply HELP for help, STOP to opt out.</div>
+      <div class="who">you</div>
+      <div class="msg out">YES</div>
+      <div class="who">after</div>
+      <div class="msg in">after 🌙: you're ashley's anchor now. thank you for being there. reply STOP anytime to opt out.</div>
+      <div class="who">later</div>
+      <div class="msg in">hey, it's after 🌙 ashley's going out tonight and locked snapchat until 9am. if she asks you for the unlock code, it's 4821. reply STOP to opt out.</div>
+    </div>
+    <p class="fine">Replying HELP gets: "after 🌙: support texts for anchors. email after.support@gmail.com for help. reply STOP to opt out. msg &amp; data rates may apply." Replying STOP gets one confirmation and no more messages.</p>
+
+  </main>
+  <footer>
+    <div class="row">
+      <span>© 2026 After</span>
+      <nav><a href="/about/">About</a><a href="/support/">Support</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a><a href="mailto:after.support@gmail.com?subject=After%20support">after.support@gmail.com</a></nav>
+    </div>
+    <p class="crisis">After is not a substitute for professional care. If you're in crisis or thinking about harming yourself, call or text 988 or text HOME to 741741 (US), or find a helpline at findahelpline.com.</p>
+  </footer>
+</div>
+<script>
+  // Invite links look like /anchor/?c=ASH24: pre-fill the keyword with that code.
+  (function () {
+    var code = (new URLSearchParams(location.search).get('c') || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 10);
+    var body = code ? 'ANCHOR ' + code : 'ANCHOR';
+    var sep = /iPhone|iPad|Mac/.test(navigator.userAgent) ? '&' : '?';
+    document.getElementById('join').href = 'sms:+16178419219' + sep + 'body=' + encodeURIComponent(body);
+    document.getElementById('keyword').textContent = body;
+  })();
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2c49b818e342460999bc8472ac2195e9"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
