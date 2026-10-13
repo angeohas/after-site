@@ -41,7 +41,8 @@
     <p>Or text <span class="code" id="keyword">ANCHOR</span> to <strong>(617) 841-9219</strong>, then reply <strong>YES</strong> to confirm.</p>
     <p class="fine">By texting ANCHOR to (617) 841-9219, you agree to receive support text messages from After about the friend who invited you. Message frequency varies (usually up to 10 msgs/month). Message and data rates may apply. Reply HELP for help and STOP to opt out at any time. Consent is not a condition of any purchase. See our <a href="/privacy/">Privacy Policy</a> and <a href="/terms/#sms">Terms of Service</a>.</p>
 
-    <h2>what the texts look like</h2>
+    <h2>example: what the texts look like</h2>
+    <p class="fine">This is an example. The name and invite code below are made up. Your texts will use your friend's name and the code from your invite link.</p>
     <div class="thread">
       <div class="who">you</div>
       <div class="msg out">ANCHOR ASH24</div>
@@ -70,9 +71,12 @@
   (function () {
     var code = (new URLSearchParams(location.search).get('c') || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 10);
     var body = code ? 'ANCHOR ' + code : 'ANCHOR';
+
     var sep = /iPhone|iPad|Mac/.test(navigator.userAgent) ? '&' : '?';
     document.getElementById('join').href = 'sms:+16178419219' + sep + 'body=' + encodeURIComponent(body);
-    document.getElementById('keyword').textContent = body;
+    var keyword = document.getElementById('keyword');
+    keyword.textContent = body;
+    if (!code) keyword.insertAdjacentText('afterend', ' plus the code from your invite link');
   })();
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2c49b818e342460999bc8472ac2195e9"}'></script><!-- End Cloudflare Web Analytics -->
