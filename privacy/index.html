@@ -23,7 +23,7 @@
 
     
     <h1>Privacy Policy for After</h1>
-    <div class="updated">Last updated: October 13, 2026</div>
+    <div class="updated">Last updated: October 20, 2026</div>
 
     <div class="card">
       <p><strong>Important note:</strong> this policy is split into two parts. Part 1 covers features that exist in the app today. Part 2 covers features that are planned but not yet built (sign-in, analytics, crash reporting, ads). Part 2 is not yet in effect.</p>
@@ -54,7 +54,8 @@
       <tr><td>Microphone</td><td>Used only when you actively record a voice note.</td></tr>
       <tr><td>Photo Library</td><td>Used to select a photo for "I am," to attach a photo to a journal entry or letter, and to browse/manage photos in the clean-out section. We do not receive copies of your photos.</td></tr>
       <tr><td>Contacts</td><td>Used only to select your anchors' names and phone numbers. We don't read, store, or transmit any other contacts.</td></tr>
-      <tr><td>Notifications</td><td>Used to schedule local daily reminders (e.g. check-in, journal prompts), and, if you hold a message in Drafts with a timer, a check-in when the timer ends. All are scheduled directly on your device. These are scheduled on-device. We don't operate a push notification server, and no data is sent to us through this.</td></tr>
+      <tr><td>Screen Time (Family Controls)</td><td>Used only if you turn on the "going out" lock, to block the apps you pick until the time you choose. See Section 13.</td></tr>
+      <tr><td>Notifications</td><td>Used to schedule local daily reminders (e.g. check-in, journal prompts), and, if you use the "going out" lock, a notification to enter your unlock code and one when your apps unlock. All are scheduled directly on your device. We don't operate a push notification server, and no data is sent to us through this.</td></tr>
     </table></div>
 
     <h3>4. How Your Information Is Stored</h3>
@@ -74,6 +75,7 @@
     <p><strong>AI song suggestions.</strong> In the music detox section, you can optionally enable AI-generated suggestions for songs similar to ones you're avoiding. This is off by default and only turns on if you explicitly opt in, after being shown what it sends. When you request suggestions, the titles and artists of the songs you've quarantined or marked "healing" (not your journal, mood, or anything else) are sent to Anthropic's Claude API to generate similar suggestions. This request is not logged or stored on our server.</p>
     <p><strong>Feedback.</strong> If you use the in-app feedback box, the text you write is sent to and stored on our server so we can read it. Unlike the two features above, feedback text is retained (not just transiently processed) until we act on it or you ask us to delete it. Don't include anything in feedback you wouldn't want stored. It's the one place in the App where written text is not kept only on your device.</p>
     <p><strong>Community letters.</strong> In "from a friend," you can optionally write an anonymous letter for other users. If you submit one, the text you write (and the "for when…" line you choose) is sent to and stored on our server, where we review it before deciding whether to publish it to other users. We don't collect your name or an account with it, and we may edit or remove a letter at any time. Please don't include names, contact details, or anything identifying. We can't reply to submissions. Approved letters are shown to all users, and anyone can report a letter from within the App. You can ask us to remove a letter you submitted by emailing after.support@gmail.com.</p>
+    <p><strong>A thank-you for your first letter.</strong> When you submit your first letter, we may give you a free month of Premium as a thank-you. To do this, the App sends your anonymous app user ID to our server, which asks our subscription provider, RevenueCat, to add the free month to your account. We keep only a one-way scrambled version (a hash) of that ID so the gift is given once per person, and it is not linked to your letter.</p>
     <p>All three AI features call Anthropic's Claude API to generate their responses; Anthropic processes those requests as our service provider under its own <a href="https://www.anthropic.com/legal/privacy" target="_blank">privacy policy</a> and commercial terms. These requests are rate-limited per IP address; your IP address is used only for that rate limit and is not stored.</p>
 
     <h3>6. Sharing With Your Anchor, and Spotify</h3>
@@ -100,9 +102,19 @@
     <p><strong>How anchors opt in.</strong> An After user can send a friend an invite link from their own phone. The friend joins only by texting the keyword ANCHOR (with the invite code) to (617) 841-9219 and then replying YES. We never text a phone number that hasn't opted in this way, and entering a friend's number in the App does not sign them up. Invite codes are random, single-use, and expire, and the user must approve each anchor in the App before that anchor receives any messages about them.</p>
     <p><strong>What we collect.</strong> For anchors who opt in: their phone number, which After user they've agreed to support (linked by an invite code and an anonymous app user ID, not the user's name or Apple ID), when and how they opted in or out, and the messages sent to and received from them. For users: which alerts they've chosen to send their anchor, and the details needed to send them (for example, a first name, a lock end time, or an unlock code).</p>
     <p><strong>How we use it.</strong> Only to send the messages the user has turned on (check-in alerts, "going out" lock heads-ups, and unlock codes), to deliver an anchor's replies privately to the user inside the App, and to honor opt-outs. An anchor's reply is stored on our server only until the user's App receives it, then deleted. Opt-in and opt-out records are kept as long as needed to prove consent and respect opt-outs.</p>
+    <p><strong>Keeping details private.</strong> For each anchor, the user can turn on "keep details private." Then every alert to that anchor only says the user could use a check-in, without saying why, and lock texts don't name the locked apps.</p>
     <p><strong>Service provider.</strong> Messages are sent and received through Twilio, which processes them on our behalf under its own <a href="https://www.twilio.com/legal/privacy" target="_blank">privacy policy</a>.</p>
     <p><strong>No sale or marketing sharing.</strong> We do not sell or share your SMS opt-in data or personal information with third parties for marketing purposes. SMS opt-in data and consent are never shared with third parties, except service providers like Twilio that help us deliver the messages.</p>
     <p><strong>Opting out.</strong> Reply STOP to any message from After to stop all texts, or HELP for help. You can also email <a href="mailto:after.support@gmail.com">after.support@gmail.com</a>. Message frequency varies. Message and data rates may apply. See the SMS Terms in our <a href="/terms/#sms">Terms of Service</a>.</p>
+
+    <h3>13. Screen Time "Going Out" Lock</h3>
+    <p>The "going out" lock is optional. If you turn it on, the App uses Apple's Screen Time (Family Controls) framework, with your permission, to block the apps you choose until a time you pick.</p>
+    <ul>
+      <li><strong>Only the apps you pick.</strong> You choose apps in Apple's own app picker. Apple gives the App an anonymous token for each one, not its name, and the App can't see which other apps you have or how you use them. The App can show a locked app's name on your phone, for example on the unlock screen, but that name is never sent to us.</li>
+      <li><strong>Stays on your phone.</strong> Your app choices and lock settings are stored on your device and are never sent to us. The App doesn't receive or collect your Screen Time or app-usage data.</li>
+      <li><strong>Your unlock code.</strong> If you have an anchor who gets texts from After, our server creates a random 4-digit code, texts it to that anchor (see Section 12), and keeps only a scrambled version (a hash) so it can check the code you enter. Along with the code, your anchor's text includes your first name, the time your apps unlock, and a short description of what you locked, if you write one. The code works only until the lock ends.</li>
+      <li><strong>Turning it off.</strong> Your apps unlock on their own at the time you chose. You can also remove the App's Screen Time permission at any time in iOS Settings › Screen Time.</li>
+    </ul>
 
     <h2>PART 2: Planned Additions (not yet live)</h2>
     <p>The following are planned but not yet built: account sign-in (with Sign in with Apple offered alongside any third-party option), analytics, crash reporting, and advertising. This Privacy Policy will be updated to reflect each of these before they become active in the App.</p>
